@@ -8,12 +8,12 @@
   <meta property="og:title" content="Nayoung Jin">
   <meta property="og:description" content="Integrated M.S.–Ph.D. student, Applied Artificial Intelligence, Hanyang University">
   <meta property="og:type" content="profile">
-  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="og:image" content="../assets/profile.jpg">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231F4E8C'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-style='italic' font-size='17' fill='white' text-anchor='middle'%3ENJ%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="../assets/style.css">
   <script>
     // Add ?draft to the URL to highlight items that still need confirmation.
     if (/[?&]draft\b/.test(location.search)) document.documentElement.classList.add("draft");
@@ -24,7 +24,7 @@
   <p class="draft-note">DRAFT VIEW · Dashed items still need confirmation. Visitors without ?draft do not see these marks.</p>
 
   <header class="top">
-    <img class="photo" src="assets/profile.jpg" alt="Portrait of Nayoung Jin" width="374" height="501">
+    <img class="photo" src="../assets/profile.jpg" alt="Portrait of Nayoung Jin" width="374" height="501">
     <div>
       <h1 class="name">Nayoung Jin<span class="name-ko">진나영</span></h1>
       <p class="role">Integrated M.S.–Ph.D. Student, Department of Applied Artificial Intelligence, Hanyang University</p>
@@ -37,86 +37,34 @@
   </header>
 
   <nav class="pagenav" aria-label="Site sections">
-    <a href="#work">Selected Work</a>
-    <a href="#publications">Publications</a>
-    <a href="#talks">Presentations</a>
-    <a href="#awards">Awards</a>
-    <a class="nav-cta" href="cv/">Résumé →</a>
+    <a class="nav-cta" href="../">← Full portfolio</a>
   </nav>
 
-  <section id="about">
-    <h2>About</h2>
+  <section id="profile">
+    <h2>Profile</h2>
     <p class="interests">
-      I build and study interactive systems that put people and AI in the same loop. My work covers conversational
-      agents for learning, LLM-based multi-agent personas for shared media experiences such as live sports co-viewing
-      and museum art appreciation, and vision–language models for understanding video. I design these systems, then
-      run user studies to find out what they actually change for the people using them.
+      Researcher in human–AI interaction, currently in an integrated M.S.–Ph.D. program. I build LLM- and
+      vision–language-model-based interactive systems — conversational agents for learning, multi-agent personas for
+      live sports co-viewing, an AI docent for museums — and evaluate them with user studies. First author of an
+      EMNLP Findings paper; two systems currently under review at CHI and IUI; one system registered as software and
+      one deployed as a public museum exhibit.
     </p>
   </section>
 
-  <!--
-    ▸ 항목에 설명을 추가하려면, 그 항목의 <div class="what"> 안에 아래 한 줄을 넣으세요.
-        <p class="desc">설명 문장</p>
-      아래 Selected Work의 설명들은 채워 넣기 쉽도록 빈 칸으로 비워 두었습니다.
-  -->
-
-  <section id="work">
-    <h2>Selected Work</h2>
-    <ul class="entries work">
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="entries">
       <li class="entry">
-        <div class="when">2026</div>
-        <div class="what">
-          <span class="title">WatchCrew<span class="tag">IUI ’27 submission</span></span>
-          <span class="line">Multi-agent sports co-viewing: AI spectators with appraisal-based personas react to a live
-            baseball broadcast in a shared chat.</span>
-          <p class="desc"></p>
-        </div>
+        <div class="when">Building</div>
+        <div class="what"><span class="line tbc">Python · PyTorch · LLM application development (prompting, multi-agent orchestration) · vision–language models · image segmentation</span></div>
       </li>
       <li class="entry">
-        <div class="when">2026</div>
-        <div class="what">
-          <span class="title">OLLA<span class="tag">CHI ’27 submission</span></span>
-          <span class="line">An AI docent that chains art appreciation into See–Think–Wonder loops, proposing the next
-            region of a painting from what the visitor looked at and asked before.</span>
-          <p class="desc"></p>
-        </div>
+        <div class="when">Evaluating</div>
+        <div class="what"><span class="line tbc">User study design (within-subject experiments) · statistical analysis · qualitative analysis of interview and log data</span></div>
       </li>
       <li class="entry">
-        <div class="when tbc">2024</div>
-        <div class="what">
-          <span class="title tbc">AI와 함께 컬러링, 콜라보 — Coloring with AI</span>
-          <span class="line tbc">Interactive human–AI co-creation exhibit at the National Science Museum Busan
-            (국립부산과학관), where visitors color drawings together with an AI.</span>
-          <p class="desc"></p>
-        </div>
-      </li>
-      <li class="entry">
-        <div class="when">2024</div>
-        <div class="what">
-          <span class="title">Road Flooding Damage Analysis</span>
-          <span class="line">A framework that judges flooding damage from road imagery using Semantic Segment Anything,
-            with no additional training. Registered as software (No. C-2024-047339).</span>
-          <p class="desc"></p>
-        </div>
-      </li>
-      <li class="entry">
-        <div class="when">2022</div>
-        <div class="what">
-          <span class="title">StuBot<span class="tag">EMNLP Findings 2022</span></span>
-          <span class="line">Learning by teaching a conversational agent: the agent finds gaps in what a learner
-            explains through machine reading comprehension and asks about them. First author, user study with 20
-            participants.</span>
-          <p class="desc"></p>
-        </div>
-      </li>
-      <li class="entry">
-        <div class="when">2019</div>
-        <div class="what">
-          <span class="title">FX-Toon</span>
-          <span class="line">Turns ordinary webtoons into animated effect toons with GAN-based segmentation. Grand
-            Prize, 2019 SW/ICT Academic Conference.</span>
-          <p class="desc"></p>
-        </div>
+        <div class="when">Languages</div>
+        <div class="what"><span class="line tbc">Korean (native) · English (research reading, writing, and conference presentation)</span></div>
       </li>
     </ul>
   </section>
@@ -140,6 +88,11 @@
       </li>
     </ul>
   </section>
+
+  <!--
+    To add a description to any entry, put this line inside its <div class="what">:
+      <p class="desc">One or two sentences about the work.</p>
+  -->
 
   <section id="publications">
     <h2>Publications</h2>
@@ -338,7 +291,7 @@
   </section>
 
   <footer>
-    <span>Nayoung Jin · <a href="cv/">Résumé</a></span>
+    <span>Nayoung Jin · Curriculum Vitae</span>
     <span>Last updated September 2026</span>
   </footer>
 </main>
